@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<link rel="stylesheet" href="order.css">
+<script src="order.js"></script>
+        
+        <title>Form Validation</title>
+        
+    </head>
+    <body>
+        <h1>REGISTRATION FORM</h1>
+        <form
+            name="RegForm"
+            onsubmit="return validateForm()"
+        >
+            <p>
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="Name"
+                    placeholder="Enter your full name"
+                />
+                <span
+                    id="name-error"
+                    class="error-message"
+                ></span>
+            </p>
+            <p>
+                <label for="address"
+                    >Address:</label
+                >
+                <input
+                    type="text"
+                    id="address"
+                    name="Address"
+                    placeholder="Enter your address"
+                />
+                <span
+                    id="address-error"
+                    class="error-message"
+                ></span>
+            </p>
+            <p>
+                <label for="email"
+                    >E-mail Address:</label
+                >
+                <input
+                    type="text"
+                    id="email"
+                    name="EMail"
+                    placeholder="Enter your email"
+                />
+                <span
+                    id="email-error"
+                    class="error-message"
+                ></span>
+            </p>
+            <p>
+                <label for="password"
+                    >Password:</label
+                >
+                <input
+                    type="password"
+                    id="password"
+                    name="Password"
+                />
+                <span
+                    id="password-error"
+                    class="error-message"
+                ></span>
+            </p>
+            <p>
+                <label for="subject"
+                    >Select Your Item:</label
+                >
+                <select
+                    id="subject"
+                    name="Subject"
+                >
+                    <option value="">
+                        Select Item
+                    </option>
+                    <option value="Veg">
+                        Veg
+                    </option>
+                    <option value="Non-Veg">
+                       Non-Veg
+                    </option>
+                    <option value="veg & Non-Veg">
+                        veg & Non-Veg
+                    </option>
+                </select>
+                <span
+                    id="subject-error"
+                    class="error-message"
+                ></span>
+            </p>
+            <p>
+                <label for="comment"
+                    >College Name:</label
+                >
+                <textarea
+                    id="comment"
+                    name="Comment"
+                ></textarea>
+            </p>
+            <p>
+                <input
+                    type="checkbox"
+                    id="agree"
+                    name="Agree"
+                />
+                <label for="agree"
+                    >I agree to the above
+                    information</label
+                >
+                <span
+                    id="agree-error"
+                    class="error-message"
+                ></span>
+            </p>
+            <p>
+                <input
+                    type="submit"
+                    value="Send"
+                    name="Submit"
+                />
+                <input
+                    type="reset"
+                    value="Reset"
+                    name="Reset"
+                />
+            </p>
+        </form>
+    </body>
+</html
